@@ -1,0 +1,61 @@
+{
+  "token": "",
+  "chatId": "",
+  "MainUsername": "name",
+  "price": price,
+  "users": [
+    {
+      "nickname": "FIgmahtscc",
+      "password": "cvbcvb",
+      "anarchy": "21",
+      "mode": "3",
+      "item": "ender_pearl",
+      "proxy": {
+        "host": "",
+        "port": ,
+        "username": "",
+        "password": ""
+      }
+    },
+    {
+      "nickname": "chtagpscv23",
+      "password": "fghfgh",
+      "anarchy": "22",
+      "mode":  "4",
+      "item": "ender_pearl",
+      "proxy": {}
+    },
+    {
+      "nickname": "cssdizainer",
+      "password": "cvbcvb",
+      "anarchy": "31",
+      "mode":  "4",
+      "item": "ender_pearl",
+      "proxy": {}
+    },
+    {
+      "nickname": "kyropatka32",
+      "password": "cvbcvb",
+      "anarchy": "21",
+      "mode":  "3",
+      "item": "ender_pearl",
+      "proxy": {}
+    },
+    {
+      "nickname": "djikitovka",
+      "password": "cvbcvb",
+      "anarchy": "30",
+      "mode":  "4",
+      "item": "ender_pearl",
+      "proxy": {}
+    },
+    {
+      "nickname": "baletyssobes",
+      "password": "cvbcvb",
+      "anarchy": "31",
+      "mode": "2",
+      "item": "ender_pearl",
+      "proxy": {}
+    }
+  ]
+}
