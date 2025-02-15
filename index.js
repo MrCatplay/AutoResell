@@ -16,7 +16,7 @@ async function start(user, usersData) {
         bot = await NotProxy(user.nickname)
     }
 
-    bot.price = usersData.price
+    bot.price = user.price
     bot.item = user.item
     bot.function = {}
     bot.spawn = false
@@ -62,19 +62,20 @@ async function start(user, usersData) {
         if (message.includes('купил у вас')) {
             try {
                 // Изменение регулярного выражения для захвата названия товара
-                const purchaseRegex = /▶️ (.+?) купил у вас \[(.+?)\] x(\d+) за ([\d ]+)¤/;
+                const purchaseRegex = /▶ (.+?) купил у вас \[Ender Pearl\] x(\d+) за ([\d ]+)¤/;
                 const match = message.match(purchaseRegex);
 
                 if (match) {
-                    const [, username, itemName, quantity, price] = match;
+                    const [, username, quantity, price] = match;
 
                     // Форматируем сообщение для Telegram
+                    console.log(price)
                     const formattedMessage =
                         `🛍 Покупка: ${username}\n` +
-                        `📦 Товар: ${itemName} x${quantity}\n` +
+                        `📦 Товар: 'Ender Pearl' x${quantity}\n` +
                         `💰 Сумма: ${price.replace(/ /g, ',')}¤`; // Заменяем пробелы в числе на запятые
 
-                    bot.chat(`pay ${usersData.MainUsername} ${price.replace(/ /g, '')}`);
+                    bot.chat(`/pay HE_MrKot ${price.replace(/ /g, '')}`);
                     // Отправляем сообщение в Telegram
                     sendTelegramMessage(usersData.token, usersData.chatId, formattedMessage)
                         .then(() => console.log('Уведомление о покупке отправлено'))
