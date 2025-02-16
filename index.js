@@ -50,42 +50,13 @@ async function start(user, usersData) {
     })
 
     bot.on('messagestr', (message) => {
-        // console.log(message);
+        console.log(message);
         if (message.includes('▶ Вы успешно выставили на продажу') || message.includes('был снят с продажи')) {
             console.log(message);
         }
 
         if (message.includes('/chat ')) {
             processChatCommand(bot, message);
-        }
-
-        if (message.includes('купил у вас')) {
-            try {
-                // Изменение регулярного выражения для захвата названия товара
-                const purchaseRegex = /▶ (.+?) купил у вас \[Ender Pearl\] x(\d+) за ([\d ]+)¤/;
-                const match = message.match(purchaseRegex);
-
-                if (match) {
-                    const [, username, quantity, price] = match;
-
-                    // Форматируем сообщение для Telegram
-                    console.log(price)
-                    const formattedMessage =
-                        `🛍 Покупка: ${username}\n` +
-                        `📦 Товар: 'Ender Pearl' x${quantity}\n` +
-                        `💰 Сумма: ${price.replace(/ /g, ',')}¤`; // Заменяем пробелы в числе на запятые
-
-                    bot.chat(`/pay HE_MrKot ${price.replace(/ /g, '')}`);
-                    // Отправляем сообщение в Telegram
-                    sendTelegramMessage(usersData.token, usersData.chatId, formattedMessage)
-                        .then(() => console.log('Уведомление о покупке отправлено'))
-                        .catch(error => console.error('Ошибка отправки сообщения в Telegram:', error));
-                } else {
-                    console.error('Не удалось распарсить сообщение о покупке:', message);
-                }
-            } catch (e) {
-                console.error('Ошибка обработки покупки:', e);
-            }
         }
 
     })

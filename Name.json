@@ -1,8 +1,6 @@
 {
-  "token": "",
-  "chatId": "",
-  "MainUsername": "name",
-  "price": ,
+  "token": "7894806640:AAESCG6_qYGny1Bt6nG2wT1WNFRWpT5CtZg",
+  "chatId": "-1002476948139",
   "users": [
     {
       "nickname": "FIgmahtscc",
@@ -10,12 +8,8 @@
       "anarchy": "21",
       "mode": "3",
       "item": "ender_pearl",
-      "proxy": {
-        "host": "",
-        "port": ,
-        "username": "",
-        "password": ""
-      }
+      "price": 100000000,
+      "proxy": {}
     },
     {
       "nickname": "chtagpscv23",
@@ -23,6 +17,7 @@
       "anarchy": "22",
       "mode":  "4",
       "item": "ender_pearl",
+      "price": 20000000,
       "proxy": {}
     },
     {
@@ -31,6 +26,7 @@
       "anarchy": "31",
       "mode":  "4",
       "item": "ender_pearl",
+      "price": 20000000,
       "proxy": {}
     },
     {
@@ -39,6 +35,7 @@
       "anarchy": "21",
       "mode":  "3",
       "item": "ender_pearl",
+      "price": 20000000,
       "proxy": {}
     },
     {
@@ -47,6 +44,7 @@
       "anarchy": "30",
       "mode":  "4",
       "item": "ender_pearl",
+      "price": 20000000,
       "proxy": {}
     },
     {
@@ -55,6 +53,7 @@
       "anarchy": "31",
       "mode": "2",
       "item": "ender_pearl",
+      "price": 20000000,
       "proxy": {}
     }
   ]
