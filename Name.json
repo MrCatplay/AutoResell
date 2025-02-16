@@ -1,60 +1,21 @@
 {
-  "token": "7894806640:AAESCG6_qYGny1Bt6nG2wT1WNFRWpT5CtZg",
-  "chatId": "-1002476948139",
+  "token": "ВАШ_ТОКЕН_БОТА",
+  "chatId": "ID_ЧАТА",
+  "MainUsername": "НИК_ДЛЯ_ПОЛУЧЕНИЯ_МОНЕТ",
+  "price": 100,
   "users": [
     {
-      "nickname": "FIgmahtscc",
-      "password": "cvbcvb",
-      "anarchy": "21",
-      "mode": "3",
+      "nickname": "НИК_БОТА",
+      "password": "ПАРОЛЬ_БОТА",
+      "anarchy": 21,
+      "mode": 3,
       "item": "ender_pearl",
-      "price": 100000000,
-      "proxy": {}
-    },
-    {
-      "nickname": "chtagpscv23",
-      "password": "fghfgh",
-      "anarchy": "22",
-      "mode":  "4",
-      "item": "ender_pearl",
-      "price": 20000000,
-      "proxy": {}
-    },
-    {
-      "nickname": "cssdizainer",
-      "password": "cvbcvb",
-      "anarchy": "31",
-      "mode":  "4",
-      "item": "ender_pearl",
-      "price": 20000000,
-      "proxy": {}
-    },
-    {
-      "nickname": "kyropatka32",
-      "password": "cvbcvb",
-      "anarchy": "21",
-      "mode":  "3",
-      "item": "ender_pearl",
-      "price": 20000000,
-      "proxy": {}
-    },
-    {
-      "nickname": "djikitovka",
-      "password": "cvbcvb",
-      "anarchy": "30",
-      "mode":  "4",
-      "item": "ender_pearl",
-      "price": 20000000,
-      "proxy": {}
-    },
-    {
-      "nickname": "baletyssobes",
-      "password": "cvbcvb",
-      "anarchy": "31",
-      "mode": "2",
-      "item": "ender_pearl",
-      "price": 20000000,
-      "proxy": {}
+      "proxy": {
+        "host": "хост_прокси",
+        "port": 1080,
+        "username": "логин_прокси",
+        "password": "пароль_прокси"
+      }
     }
   ]
 }
